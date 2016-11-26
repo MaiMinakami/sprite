@@ -1,9 +1,9 @@
 .contacts {
 
 	&__title-container {
-		    max-width: 1145px;
+	max-width: 1145px;
     margin: auto;
-    border-top: 1px solid #838383;
+    border-top: 1px solid $colorlightGrey;
 	}
 	&__container {
 		max-width:1145px;
@@ -29,20 +29,20 @@
 	}
 
 	&__map-responsive{
-		    overflow: hidden;
+	overflow: hidden;
     /*padding-bottom: 56.25%;*/
     padding-bottom: 50%;
    /* position: relative;*/
    /* height: 0;*/
 
-    & iframe {    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    border: 0;
-
-    }
+	    & iframe {
+		    left: 0;
+		    top: 0;
+		    height: 100%;
+		    width: 100%;
+		    position: absolute;
+		    border: 0;
+		    }
 	}
 
 	&__form {
@@ -60,45 +60,39 @@
 			flex-basis: 200px;
 			background:#f6f7f8;
 			border:1px solid $colorlightGrey;
-			color:$colorDarkGrey;
-		
+			color:$colorDarkGrey;		
 		}	
+
 		.subject,
 		.comments  {
 		@extend .email;		
-			flex-basis:100%;
-			
-			
+			flex-basis:100%;				
 		}
 		
 		.comments{
 			height: 100px;
-		}
-		
+		}		
 	}
 }
 
 @media screen and(max-width:768px){
-	.contacts__map  {
-		flex-basis: 100%;		
-		
-	
+	.contacts__map,
+	.contacts__form   {
+		flex-basis: 100%;	
 	}
-	.contacts__form  {
-		flex-basis: 100%;		
-	
-	}
+	/*.contacts__form  {
+		flex-basis: 100%;	
+	}*/
 }
 
-@media screen and (max-width:768px) {
-	
-		.email{
-			flex-basis: 100%;
-		}
-	}
-	
-	@media screen and (max-width:768px) {
+@media screen and (max-width:768px) {	
+		.email,
 		.name{
 			flex-basis: 100%;
 		}
-	}
+	}	
+	/*@media screen and (max-width:768px) {
+		.name{
+			flex-basis: 100%;
+		}
+	}*/

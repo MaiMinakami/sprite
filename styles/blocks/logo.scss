@@ -3,9 +3,10 @@
 	width:345px;
 	display: flex;
     flex: 0 0 auto;
-    position:relative;background:$colorMainGreen;
+    position:relative;
+    background:$colorMainGreen;
 
-	&__name{
+	&__name {
 		color:$colorWhite;		
 		text-transform: uppercase; 
 		position: relative;

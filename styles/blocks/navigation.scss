@@ -1,7 +1,6 @@
 .navigation{
 
-	&__item{
-		
+	&__item{		
 		color: $colorWhite;
 		font-size: 18px;
 		font-weight: 600;
@@ -15,6 +14,7 @@
 	}
 
 }
+
 @media  screen and (max-width:980px) {
 	.navigation {display:none;}
 }

@@ -1,6 +1,5 @@
 .service{
-	text-align:center;
-	
+	text-align:center;	
 	margin: 15px;
 	flex-basis:262px;
 	padding-bottom:40px;
@@ -27,20 +26,16 @@
 
 @media screen and (max-width:980px) {
 	.service-container {	
-	flex-wrap:wrap;
-	
-}
+	flex-wrap:wrap;	
+	}
 	.service{
 		flex-grow:1;
 		flex-basis:42%
 	}
-
 }
 
-@media screen and (max-width:786px) {
-	
+@media screen and (max-width:786px) {	
 	.service{
 		flex-basis:100%
 	}
-
 }
