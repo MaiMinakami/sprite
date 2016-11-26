@@ -1,0 +1,27 @@
+*{margin:0;
+padding:0}
+body{
+	font-family:$globalFontFamily;
+	
+	min-width:320px;
+	margin:auto;
+
+}
+h1{
+	font-size:32px;
+}
+
+h2{font-size: 28px;
+}
+
+h3{font-size: 18px;}
+
+h4{font-size:16px}
+
+p{font-size: 13px;
+color:$colorlightGrey;
+}
+
+textarea {
+	font-family:$globalFontFamily;
+}

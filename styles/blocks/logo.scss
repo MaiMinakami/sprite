@@ -1,0 +1,28 @@
+.logo{
+	height: 102px;	
+	width:345px;
+	display: flex;
+    flex: 0 0 auto;
+    position:relative;background:$colorMainGreen;
+
+	&__name{
+		color:$colorWhite;		
+		text-transform: uppercase; 
+		position: relative;
+		display: flex;
+		width: 360px;
+		align-items: center;
+		justify-content: center;
+		padding-left: 30px;		
+	}
+
+	&:before{
+		content:"";
+		background: url(../images/templatemo_logo.png) 0 0 no-repeat;
+		position:absolute;
+		top:11%;
+		width: 90px;
+		height: 90px;
+		left:9%;
+	}
+}

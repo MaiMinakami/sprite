@@ -1,0 +1,38 @@
+.carousel{
+	&__page-part{
+		background: $colorBlack;
+	}
+
+
+	&__pages {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width:1145px;
+		margin: auto;
+
+			& img {
+				margin: 24px 0;
+
+			}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.carousel__page-part{
+		display: none;
+	}
+}
+
+
+
+
+//change bx-carousel style
+.bx-wrapper {
+	margin: 0;
+	border:none;
+
+	& img {
+		width: 100%;
+	}
+}

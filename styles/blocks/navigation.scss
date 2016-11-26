@@ -1,0 +1,20 @@
+.navigation{
+
+	&__item{
+		
+		color: $colorWhite;
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		list-style: none;
+		width: 150px;
+		display: inline-flex;
+		height: 100px;
+		align-items: center;
+		justify-content: center;
+	}
+
+}
+@media  screen and (max-width:980px) {
+	.navigation {display:none;}
+}

@@ -1,0 +1,33 @@
+.section-title{
+		text-align: center;
+		line-height: 181px;
+		color:$colorDarkGrey;
+		text-transform: uppercase;
+		position:relative;
+	&:before{
+			content:"";
+			width:180px;
+			height: 5px;
+			position: absolute;
+			left:23%;
+			top:50%;
+			background: url(../images/t-left.png) 0 0 no-repeat;
+		}
+
+		&:after{
+			content:"";
+			width:180px;
+			height: 5px;
+			position: absolute;
+			right:23%;
+			top:50%;
+			background: url(../images/t-right.png) 0 0 no-repeat;
+		}
+}
+
+@media screen and (max-width:1024px){
+	.section-title:before,
+	.section-title:after{
+		display: none;
+	}
+}

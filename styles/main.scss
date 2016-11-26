@@ -1,0 +1,26 @@
+$globalFontFamily:'Open Sans';
+
+$colorlightGrey:#838383; //color for text-content
+$colorDarkGrey:#444444;//color for titles
+$colorWhite:#ffffff;
+$colorBlack:#161616;//color for header-background
+$colorMainGreen:#26b864;
+//font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+@import 'variables';
+@import 'base';
+@import 'titles';
+
+//styles for blocks
+@import 'blocks/logo';
+@import 'blocks/page-header';
+@import 'blocks/navigation';
+@import 'blocks/carousel';
+@import 'blocks/service';
+@import 'blocks/sale';
+@import 'blocks/hot-sale';
+@import 'blocks/week-sale';
+@import 'blocks/product';
+@import 'blocks/card-product';
+@import 'blocks/contacts';

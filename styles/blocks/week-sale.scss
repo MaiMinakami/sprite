@@ -1,0 +1,22 @@
+.week-sale{
+background: $colorMainGreen;
+height:50%;
+flex:1;
+padding:20px;
+	img{
+		width: 100%;
+		height: auto;
+		}
+	&__title{
+		color: $colorWhite;
+		text-align: center;
+		margin-top:10px; 
+	}	
+
+}
+
+@media screen and (max-width:768px){
+	.week-sale {
+		 flex-basis:100%
+	}
+}

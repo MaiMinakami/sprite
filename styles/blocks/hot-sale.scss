@@ -1,0 +1,28 @@
+.hot-sale{
+	flex:5;	
+	margin: 0 10px 30px 10px;
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+	&__title{
+		margin: 20px 0;
+		color:$colorDarkGrey;
+	}
+
+	&__description {
+		line-height: 20px;
+	}
+	
+}
+
+@media screen and (max-width:768px){
+	.hot-sale {
+		 flex: 1 auto;
+		 flex-basis:100%;
+		 margin-bottom: 30px;
+
+	}
+}

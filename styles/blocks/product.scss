@@ -1,0 +1,24 @@
+.product{
+
+	&__container{
+		max-width:1145px;
+		display: flex;
+		flex-wrap: wrap; 
+		margin:auto;
+		justify-content:space-around;
+	}
+
+	&__title-container {
+		max-width: 1145px;
+		margin: auto;
+		border-top:1px solid $colorlightGrey;
+	
+	}
+}
+
+@media screen and (max-width:980px){
+	.product__container{
+		flex-wrap: wrap;
+		justify-content:space-around;
+	}
+}

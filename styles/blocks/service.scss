@@ -1,0 +1,46 @@
+.service{
+	text-align:center;
+	
+	margin: 15px;
+	flex-basis:262px;
+	padding-bottom:40px;
+
+	&__title {
+		color:$colorDarkGrey;
+		line-height: 47px;
+	}
+	
+	&__description{
+		line-height: 21px;
+		margin-top:3px; 
+	}
+	
+}
+
+.service-container {
+	display:inline-flex;
+	flex-wrap:nowrap;
+	justify-content:center;
+	width:100%;
+	padding-top:40px; 
+}
+
+@media screen and (max-width:980px) {
+	.service-container {	
+	flex-wrap:wrap;
+	
+}
+	.service{
+		flex-grow:1;
+		flex-basis:42%
+	}
+
+}
+
+@media screen and (max-width:786px) {
+	
+	.service{
+		flex-basis:100%
+	}
+
+}
