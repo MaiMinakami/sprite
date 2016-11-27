@@ -7,6 +7,7 @@ $colorDarkGrey:#444444;//color for titles
 $colorWhite:#ffffff;
 $colorBlack:#161616;//color for header-background
 $colorMainGreen:#26b864;
+
 //font
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 //plagins styles
@@ -29,3 +30,5 @@ $colorMainGreen:#26b864;
 @import 'blocks/product';
 @import 'blocks/card-product';
 @import 'blocks/contacts';
+@import 'blocks/page-footer';
+@import 'blocks/network';

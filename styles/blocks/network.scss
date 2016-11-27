@@ -1,0 +1,25 @@
+.network{
+
+	li{
+		list-style: none;
+		width: 47px;
+		position:relative;
+		margin: 2px;
+		height: 38px;
+	display: inline-flex;
+
+	}
+
+	&__facebook{
+		width: 47px;
+		height: 36px;
+    	position:absolute;
+    	top:1px;
+		background:url(../images/network_icon.png)0 0 no-repeat;
+		content:"";
+		background-position: 11px 0;
+			&:hover {
+			    	background-position: 11px -36px;
+			    }
+	}
+}

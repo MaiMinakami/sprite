@@ -59,7 +59,8 @@ textarea {
   height: 102px;
   width: 345px;
   display: flex;
-  flex: 0 0 auto;
+  flex: 0;
+  flex-shrink: 1;
   position: relative;
   background: #26b864; }
   .logo__name {
@@ -80,6 +81,12 @@ textarea {
     height: 90px;
     left: 9%; }
 
+@media screen and (max-width: 980px) {
+  .logo {
+    width: 50%; } }
+@media screen and (max-width: 760px) {
+  .logo__name {
+    color: transparent; } }
 .page-header {
   background: #161616; }
   .page-header__container {
@@ -88,7 +95,24 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
+  .page-header__img {
+    display: none;
+    width: 30px;
+    height: 28px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background: url(../images/menu_icon.png) 0 0 no-repeat;
+    content: "";
+    background-position: -27px 0; }
+    .page-header__img:hover {
+      background-position: 3px 0; }
 
+@media screen and (max-width: 980px) {
+  .page-header__img {
+    display: block;
+    width: 30px;
+    height: 28px; } }
 .navigation__item {
   color: #ffffff;
   font-size: 18px;
@@ -101,9 +125,22 @@ textarea {
   align-items: center;
   justify-content: center; }
 
+/*
+@media  screen and (max-width:980px) {
+	.navigation {display:none;}
+}*/
 @media screen and (max-width: 980px) {
+  nav {
+    flex: 100%; }
+
   .navigation {
-    display: none; } }
+    width: 100%;
+    flex: 1; }
+
+  .navigation__item {
+    width: 100%;
+    border-bottom: 1px solid #2f2f2f;
+    height: 75px; } }
 .carousel__page-part {
   background: #161616; }
 .carousel__pages {
@@ -313,5 +350,32 @@ textarea {
 		flex-basis: 100%;
 	}
 }*/
+.page-footer {
+  width: 100%;
+  background: #26b864; }
+  .page-footer__container {
+    max-width: 1145px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+.network li {
+  list-style: none;
+  width: 47px;
+  position: relative;
+  margin: 2px;
+  height: 38px;
+  display: inline-flex; }
+.network__facebook {
+  width: 47px;
+  height: 36px;
+  position: absolute;
+  top: 1px;
+  background: url(../images/network_icon.png) 0 0 no-repeat;
+  content: "";
+  background-position: 11px 0; }
+  .network__facebook:hover {
+    background-position: 11px -36px; }
 
 /*# sourceMappingURL=main.css.map */

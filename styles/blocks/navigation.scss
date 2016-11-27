@@ -15,6 +15,21 @@
 
 }
 
+/*
 @media  screen and (max-width:980px) {
 	.navigation {display:none;}
+}*/
+
+@media  screen and (max-width:980px) {
+	nav {flex:100%};
+	.navigation {width:100%;
+		flex:1}
+
+	.navigation__item {
+		width: 100%;
+		border-bottom: 1px solid #2f2f2f;
+		height: 75px;
+	}
+	
+
 }

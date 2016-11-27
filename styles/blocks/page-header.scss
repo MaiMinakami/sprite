@@ -8,4 +8,31 @@
 	    flex-wrap: wrap;
     	justify-content: space-between;
     }
+
+    &__img{
+    	display: none;
+    	width: 30px;
+		height: 28px;
+    	position:absolute;
+		top:50px;
+		right: 50px;
+		background:url(../images/menu_icon.png)0 0 no-repeat;
+		content:"";
+		background-position: -27px 0;
+			&:hover {
+			    	background-position: 3px 0;
+			    }
+    }
 }
+
+
+@media  screen and (max-width:980px) {
+	.page-header__img{
+		display: block;
+		width: 30px;
+		height: 28px;		
+    }
+}
+
+
+	
