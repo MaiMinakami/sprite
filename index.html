@@ -8,6 +8,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="node_modules/bxslider/dist/jquery.bxslider.min.js"></script>
 	<script src="js/script.js"></script>
+
 </head>
 <body>
 	<header>
@@ -16,20 +17,22 @@
 				<div class="logo">
 					<h1 class="logo__name">Sprint</h1>
 				</div>
-				<div class="page-header__img"></div>
-				<nav>
+				<div class="page-header__menu-icon"></div>
+				<nav>					
 					<ul class="navigation">
-						<li class="navigation__item">Home</li>
-						<li class="navigation__item">Services</li>
-						<li class="navigation__item">Products</li>
-						<li class="navigation__item">Contact</li>
+						<li class="navigation__item navigation__item--active"><a href="#part-carousel">Home</a></li>
+						<li class="navigation__item"><a href="#part-service">Services</a></li>
+						<li class="navigation__item"><a href="#part-sale">Sale</a></li>
+						<li class="navigation__item"><a href="#part-product">Products</a></li>
+						<li class="navigation__item"><a href="#part-contacts">Contact</a></li>
+
 					</ul>
 				</nav>
 			</div>	
 		</div>		
 	</header>
 	<section>
-		<div class="carousel">
+		<div id="part-carousel" class="carousel">
 			<div class="carousel__slides">
 				<ul class="bxslider">
 				  <li><img src="images/IMG_3204+.jpg" /></li>
@@ -37,6 +40,8 @@
 				  <li><img src="images/IMG_3204+.jpg" /></li>
 				  <li><img src="images/IMG_3478.jpg" /></li>
 				  <li><img src="images/IMG_3204+.jpg" /></li>
+				   
+				
 				</ul>			
 			</div>
 			<div class="carousel__page-part">
@@ -46,17 +51,21 @@
 				  <a data-slide-index="2" href="" class=""><img src="images/IMG_3203min.jpg"></a>
 				  <a data-slide-index="3" href="" class=""><img src="images/IMG_3478min.jpg"></a>
 				  <a data-slide-index="4" href="" class=""><img src="images/IMG_3203min.jpg"></a>
+				 
 				</div>
 			</div>
 		</div>
 	</section>
 	<section>
-		<div class="service-container">
+		<div id="part-service" class="service-container">
 			<div class="service">
 				<img class="service__image" src="images/service-first.png" alt="no-foto">
 				<h3 class="service__title">Responsive Theme</h3>
-				<p class="service__description">Cras congue orci at diam condimentum, in dignissim tellus elementum. Praesent id mauris eu urna vehicula rutrum sed in elit. Sed sed urna porta.</p>				
+				<p class="service__description">Cras congue orci at diam condimentum, in dignissim tellus elementum. Praesent id mauris eu urna vehicula rutrum sed in elit. Sed sed urna porta.</p>
+				
+
 			</div>
+
 			<div class="service">
 				<img class="service__image" src="images/service-first.png" alt="no-foto">
 				<h3 class="service__title">Responsive Theme</h3>
@@ -75,9 +84,9 @@
 		</div>	
 	</section>
 	<section>
-		<div class="sale">
+		<div id="part-sale" class="sale">
 			<div class="sale__title-container">
-				<h1 class="section-title">New Arrivals</h1>
+				<h1 class="section-title">Sale</h1>
 			</div>
 			<div class="sale__container">
 				<div class="week-sale">
@@ -114,21 +123,29 @@
 		</div>
 	</section>
 	<section>
-		<div class="product">
+		<div id="part-product" class="product">
 			<div class="product__title-container">
 				<h1 class="section-title">Products</h1>
 			</div>
 			<div class="product__container">
 				<div class="card-product">
-					<figure>
+					<figure>						
 						<div class="card-product__image-container">
 							<img class="card-product__img" src="images/promotion1.jpg" alt="">
-						</div>
+						</div>						
 						<figcaption>
 							<h3 class="card-product__title">Nunc Consectetur</h3>
 							<h4 class="card-product__old-price">Price: $260.00 <span class="card-product__current-price">$180.00</span></h4>
-						</figcaption>	
+						</figcaption>
 					</figure>
+					<div class="card-product__mask">
+						<div class="mask">
+							<div class="mask__more-about"><h4>Hello world!Itudin. Sed fermentum, neque in dignissim aliquam, quam ante pellentesquetudin. Sed fermentum, neque in dignissim aliquam, quam ante pe Sed fermentum, neque in dignissim aliquam, quam ante pellentesquetudin. Sed fermentum, neque in dignissim aliquam, quam ante pe</h4></div>
+							<h2 class="mask__title">Title</h2>
+							<h4 class="mask__description">Itudin. Sed fermentum, neque in dignissim aliquam, quam ante pellentesque.</h4>
+							<button class="mask__button">Read More</button>
+						</div>
+					</div>
 				</div>
 				<div class="card-product">
 					<figure>
@@ -140,6 +157,14 @@
 							<h4 class="card-product__old-price">Price: $260.00 <span class="card-product__current-price">$180.00</span></h4>
 						</figcaption>	
 					</figure>
+					<div class="card-product__mask">
+						<div class="mask">
+							<div class="mask__more-about"><h4>Hello world!Itudin. Sed fermentum, neque in dignissim aliquam, quam ante pellentesquetpe Sed fermentum, neque in dignissim aliquam, quam ante pellentesquetudin. Sed fermentum, neque in dignissim aliquam, quam ante pe</h4></div>
+							<h2 class="mask__title">Title</h2>
+							<h4 class="mask__description">Itudin. Sed fermentum, neque in dignissim aliquam, quam ante pellentesque.</h4>
+							<button class="mask__button">Read More</button>
+						</div>
+					</div>
 				</div>
 				<div class="card-product">
 					<figure>
@@ -151,6 +176,14 @@
 							<h4 class="card-product__old-price">Price: $260.00 <span class="card-product__current-price">$180.00</span></h4>
 						</figcaption>	
 					</figure>
+					<div class="card-product__mask">
+						<div class="mask">
+							<div class="mask__more-about"><h4>Hello world!Itudin. Sed fermentum, neque in dignissim aliquam, quam ante pellentesquetudin. Sed fermentum, neque in dignissim aliquam, quam ante pe Sed fermentum, neque in dignissim aliquam, quam ante pellentesquetudin. Sed fermentum, neque in dignissim aliquam, quam ante pe</h4></div>
+							<h2 class="mask__title">Title</h2>
+							<h4 class="mask__description">Itudin. Sed fermentum, neque in dignissim aliquam, quam ante pellentesque.</h4>
+							<button class="mask__button">Read More</button>
+						</div>
+					</div>
 				</div>
 				<div class="card-product">
 					<figure>
@@ -162,6 +195,14 @@
 							<h4 class="card-product__old-price">Price: $260.00 <span class="card-product__current-price">$180.00</span></h4>
 						</figcaption>	
 					</figure>
+					<div class="card-product__mask">
+						<div class="mask">
+							<div class="mask__more-about"><h4>Hello world!Itudin. Sed fermentum, neque in dignissim aliquam, quam ante pellentesquetudin. Sed fermentum, neque in dignissim aliquam, quam ante pe Sed fermentum, neque in dignissim aliquam, quam ante pellentesquetudin. Sed fermentum, neque in dignissim aliquam, quam ante pe</h4></div>
+							<h2 class="mask__title">Title</h2>
+							<h4 class="mask__description">Itudin. Sed fermentum, neque in dignissim aliquam, quam ante pellentesque.</h4>
+							<button class="mask__button">Read More</button>
+						</div>
+					</div>
 				</div>
 				<div class="card-product">
 					<figure>
@@ -173,6 +214,14 @@
 							<h4 class="card-product__old-price">Price: $260.00 <span class="card-product__current-price">$180.00</span></h4>
 						</figcaption>	
 					</figure>
+					<div class="card-product__mask">
+						<div class="mask">
+							<div class="mask__more-about"><h4>Hello world!Itudin. Sed fermentum, neque in dignissim aliquam, quam ante pellentesquetudin. Sed fermentum, neque </h4></div>
+							<h2 class="mask__title">Title</h2>
+							<h4 class="mask__description">Itudin. Sed fermentum, neque in dignissim aliquam, quam ante pellentesque.</h4>
+							<button class="mask__button">Read More</button>
+						</div>
+					</div>
 				</div>
 				<div class="card-product">
 					<figure>
@@ -184,12 +233,20 @@
 							<h4 class="card-product__old-price">Price: $260.00 <span class="card-product__current-price">$180.00</span></h4>
 						</figcaption>	
 					</figure>
+					<div class="card-product__mask">
+						<div class="mask">
+							<div class="mask__more-about"><h4>Hello world!Itudin. Sed fermentum, neque iermentum, neque in dignissim aliquam, quam ante pe Sed fermentum, neque in dignissim aliquam, quam ante pellentesquetudin. Sed fermentum, neque in dignissim aliquam, quam ante pe</h4></div>
+							<h2 class="mask__title">Title</h2>
+							<h4 class="mask__description">Itudin. Sed fermentum, neque in dignissim aliquam, quam ante pellentesque.</h4>
+							<button class="mask__button">Read More</button>
+						</div>
+					</div>
 				</div>				
 			</div>
 		</div>
 	</section>
 	<section>
-		<div class="contacts">
+		<div id="part-contacts" class="contacts">
 			<div class="contacts__title-container">
 				<h1 class="section-title">Contact</h1>
 			</div>
@@ -205,28 +262,28 @@
 					<input class="email" type="text" name="email" placeholder="Email">
 					<input class="subject" type="text" name="subject" placeholder="Subject">
 					<textarea name="comments" class="comments" placeholder="Message"></textarea>
+					<button class="send-message">send-message</button>
 				</div>
 			</div>	
-		</div>
+
+
+		
 	</section>
-	<!--not finished 
+	
 	<footer>
 		<div class="page-footer">
 			<div class="page-footer__container">
-				<p class="page-footer__copyrigth">Copyright © 2014 <a href="#">Company Name</a></p>
+				<p class="page-footer__copyrigth">Copyright © 2014 <a class="page-footer__company-name"href="#">Company Name</a></p>
 				<div class="page-footer__network">
 					<ul class="network">
 						<li class="network__facebook"></li>
 						<li class="network__vk"></li>
-						<li class="network__twitter"></li>
-						<li class="network__icon"></li>
-						<li class="network__icon"></li>
-						<li class="network__icon"></li>
+						<li class="network__twitter"></li>						
 					</ul>
 				</div>
 			</div>
 		</div>		
 	</footer>
--->
+
 </body>
 </html>

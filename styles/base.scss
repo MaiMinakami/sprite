@@ -25,3 +25,15 @@ color:$colorlightGrey;
 textarea {
 	font-family:$globalFontFamily;
 }
+textarea,
+textarea:active,
+textarea:focus,
+input,
+input:active,
+input:focus,
+button, 
+button:active, 
+button:focus {
+    outline: none;
+    cursor:pointer;
+}

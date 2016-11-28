@@ -1,14 +1,43 @@
 .card-product{
 	margin-bottom: 31px;
 	flex-basis:30%;
+	position:relative;
+	overflow: hidden;
+
+	&:hover .card-product__mask{
+	 transform: translateX(0px);
+}
+&:hover img{
+	 transform: translateX(100%);
+}
+
 
 	&__image-container {		
 		margin: auto;
+	
 	}
+	&__mask{	
+		 width: 100%;
+		 height: 83%;
+		 position: absolute;
+		 overflow: hidden;
+		 top: 0;
+		 left: 0;
+		 transform: translateX(-100%);
+		 opacity: 1;
+		 transition: all 0.4s ease-in-out;	
+		 
+	}
+
+
+	
 
 	img{
 		width:100%;
 		height: 100%;
+		display: block;
+		position: relative;
+		 transition: all 0.3s ease-in-out;
 	}
 
 	&__title {
@@ -37,3 +66,10 @@
 		flex-basis:100%;
 		}
 }
+
+/*.card-product:hover .card-product__mask{
+	 transform: translateX(0px);
+}*/
+/*.card-product:hover img{
+	 transform: translateX(300px);
+}*/

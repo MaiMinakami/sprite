@@ -2,24 +2,41 @@
 
 	li{
 		list-style: none;
-		width: 47px;
+		width: 37px;
 		position:relative;
 		margin: 2px;
-		height: 38px;
-	display: inline-flex;
-
+		height: 39px;
+		display: inline-flex;
 	}
 
 	&__facebook{
-		width: 47px;
+		width: 37px;
 		height: 36px;
     	position:absolute;
     	top:1px;
 		background:url(../images/network_icon.png)0 0 no-repeat;
 		content:"";
-		background-position: 11px 0;
+		background-position: 1px -37px;
 			&:hover {
-			    	background-position: 11px -36px;
+			    	background-position: 0 2px;
 			    }
+	}
+
+	&__vk{
+		@extend .network__facebook;
+		background-position: -36px -37px;
+
+			&:hover {
+				    background-position: -36px 2px;
+			}
+	}
+
+	&__twitter{
+		@extend .network__facebook;
+		background-position: -72px -37px;
+			
+			&:hover {
+		    	background-position: -72px 2px;
+		    }
 	}
 }
