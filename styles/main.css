@@ -495,7 +495,8 @@ button:focus {
   height: 100%;
   position: relative; }
   .mask__more-about {
-    padding: 10% 1%;
+    text-align: justify;
+    padding: 10% 0;
     display: none;
     max-height: 50%;
     overflow: hidden;
